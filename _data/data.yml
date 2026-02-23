@@ -1,0 +1,198 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Alex Abraham
+    tagline: Software Engineer II
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: email2alx@gmail.com
+    phone: +49 17680898121
+    timezone: Europe/Berlin
+    citizenship: Indian
+    website: #do not add http://
+    linkedin: email2alx
+    github: email2alx
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: pdf/Resume - Alex Abraham.pdf
+
+    languages:
+      title: Languages
+      info:
+        - idiom: English
+          level: Professional
+
+        - idiom: Malayalam
+          level: Native
+
+        - idiom: Tamil
+          level: Professional
+
+    interests:
+      title: Interests
+      info:
+        - item: Software Development
+          link:
+
+        - item: Cloud Technologies
+          link:
+
+        - item: Open Source
+          link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Software Engineer with 10+ years of experience in both backend and frontend
+      technologies. Developed highly scalable quality backend applications using
+      NodeJS, GoLang and frontend applications using ReactJS.
+
+      Major responsibilities include Requirement analysis, Effort estimation,
+      Application Development, Unit testing, Team management and Architecture Design.
+
+      Currently working at Delivery Hero SE in Berlin, Germany, focusing on building
+      and maintaining scalable distributed systems.
+
+education:
+    title: Education
+    info:
+      - degree: BE in Computer Science & Engineering
+        university: SCAD Engineering College
+        time: 2011 - 2015
+        details: |
+          Bachelor of Engineering in Computer Science & Engineering
+          CGPA: 6.8/10
+
+experiences:
+    title: Experiences
+    info:
+      - role: Software Engineer II
+        time: August 2022 - Present
+        company: Delivery Hero SE, Berlin, Germany
+        details: |
+          Working on building and maintaining scalable distributed systems for
+          a leading global food delivery platform.
+            - Developing backend services using NodeJS and GoLang
+            - Working with cloud technologies (AWS, Kubernetes)
+            - Contributing to microservices architecture
+            - Implementing CI/CD pipelines using DroneCI
+
+      - role: Lead Engineer
+        time: March 2019 - July 2022
+        company: QBurst Technologies, Technopark, Trivandrum
+        details: |
+          Led development teams and architected solutions for enterprise clients.
+            - Developed Developer Portal using ReactJS, NodeJS, and Backstage
+            - Built Uniqlo e-commerce platform (https://www.uniqlo.com/)
+            - Implemented PostgreSQL database solutions
+            - Used Material UI and TypeScript for frontend development
+            - Integrated Lunr Search for efficient search functionality
+
+      - role: Software Engineer
+        time: November 2016 - March 2019
+        company: Enfin Technologies, Technopark, Trivandrum
+        details: |
+          Developed full-stack applications for various clients.
+            - Built Ofabee V3 platform (https://www.ofabee.com)
+            - Created Doubt Box educational platform (https://www.doubtbox.com)
+            - Worked with ReactJS for frontend and NodeJS for backend
+            - Implemented MongoDB and MySQL database solutions
+
+      - role: Web Developer
+        time: August 2015 - November 2016
+        company: Precise Technologies LLC, Dubai (Remote from Kerala)
+        details: |
+          Started career as a web developer, working on various web applications.
+            - Developed web applications using PHP and JavaScript
+            - Worked with MySQL databases
+            - Collaborated with remote teams across different time zones
+
+projects:
+    title: Projects
+    intro: >
+      Key projects I've worked on across different organizations, ranging from
+      developer tools to e-commerce platforms and educational technology.
+    assignments:
+      - title: Developer Portal
+        link: "#"
+        tagline: "Built using ReactJS, NodeJS, Backstage, Material UI, TypeScript, JSONSchema, PostgreSQL, DroneCI & Lunr Search. An internal developer portal for managing microservices and documentation."
+
+      - title: Uniqlo E-commerce Platform
+        link: "https://www.uniqlo.com/"
+        tagline: "Large-scale e-commerce platform for the global fashion retailer Uniqlo. Worked on backend and frontend development."
+
+      - title: Ofabee V3
+        link: "https://www.ofabee.com"
+        tagline: "E-commerce platform built with modern web technologies, providing seamless shopping experience."
+
+      - title: Doubt Box
+        link: "https://www.doubtbox.com"
+        tagline: "Educational platform connecting students with tutors for instant doubt resolution and learning support."
+
+# Uncomment and fill in if you have open source contributions
+# oss:
+#     title: OSS Contributions
+#     intro: >
+#       Open source contributions and projects.
+#     contributions:
+#       - title: Project Name
+#         link: "#"
+#         tagline: "Description of your contribution."
+
+# Uncomment and fill in if you have publications
+# publications:
+#     title: Publications
+#     intro: |
+#       Publications and technical writing.
+#     papers:
+#       - title: Publication Title
+#         link: "#"
+#         authors: Author Names
+#         conference: Conference/Publication Name
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: NodeJS
+        level: 95%
+
+      - name: GoLang
+        level: 85%
+
+      - name: ReactJS
+        level: 90%
+
+      - name: TypeScript
+        level: 88%
+
+      - name: PostgreSQL
+        level: 85%
+
+      - name: MongoDB
+        level: 82%
+
+      - name: AWS & Kubernetes
+        level: 80%
+
+      - name: Docker & DroneCI
+        level: 85%
+
+      - name: PHP
+        level: 75%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

@@ -1,0 +1,25 @@
+# Site settings
+title: Alex Abraham - Resume
+url: 'https://email2alx.github.io'
+baseurl: '/resume' # Change this to your repository name
+description: Professional resume of Alex Abraham - Software Engineer II
+
+# Build settings
+markdown: kramdown
+remote_theme: sharu725/online-cv
+
+# Enable plugins
+plugins:
+  - jekyll-remote-theme
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - pdf/
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
