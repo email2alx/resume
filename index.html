@@ -1,3 +1,83 @@
 ---
 layout: default
 ---
+
+{% if site.data.data.career-profile %}
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-user"></i>
+        {{ site.data.data.career-profile.title }}
+    </h2>
+    <div class="summary">
+        {{ site.data.data.career-profile.summary }}
+    </div>
+</section>
+{% endif %}
+
+{% if site.data.data.experiences %}
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-briefcase"></i>
+        {{ site.data.data.experiences.title }}
+    </h2>
+    {% for experience in site.data.data.experiences.info %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{ experience.role }}</h3>
+                <div class="time">{{ experience.time }}</div>
+            </div>
+            <div class="company">{{ experience.company }}</div>
+        </div>
+        <div class="details">
+            {{ experience.details | markdownify }}
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.data.projects %}
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-archive"></i>
+        {{ site.data.data.projects.title }}
+    </h2>
+    {% if site.data.data.projects.intro %}
+    <div class="intro">
+        {{ site.data.data.projects.intro }}
+    </div>
+    {% endif %}
+    {% for project in site.data.data.projects.assignments %}
+    <div class="item">
+        <h3 class="project-title">
+            {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+            {% else %}
+            {{ project.title }}
+            {% endif %}
+        </h3>
+        <div class="project-tagline">{{ project.tagline }}</div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.data.skills %}
+<section class="section">
+    <h2 class="section-title">
+        <i class="fas fa-rocket"></i>
+        {{ site.data.data.skills.title }}
+    </h2>
+    <div class="skillset">
+        {% for skill in site.data.data.skills.toolset %}
+        <div class="item">
+            <h3 class="level-title">{{ skill.name }}</h3>
+            <div class="level-bar">
+                <div class="level-bar-inner" style="width: {{ skill.level }}"></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}

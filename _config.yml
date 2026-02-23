@@ -6,11 +6,10 @@ description: Professional resume of Alex Abraham - Software Engineer II
 
 # Build settings
 markdown: kramdown
-remote_theme: sharu725/online-cv
 
 # Enable plugins
 plugins:
-  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Exclude files
 exclude:

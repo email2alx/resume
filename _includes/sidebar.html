@@ -1,0 +1,90 @@
+<div class="sidebar">
+    <div class="profile-container">
+        {% if site.data.data.sidebar.avatar %}
+        <img class="profile-img" src="{{ '/assets/images/' | append: site.data.data.sidebar.avatar | relative_url }}" alt="profile picture" />
+        {% endif %}
+        <h1 class="name">{{ site.data.data.sidebar.name }}</h1>
+        <h3 class="tagline">{{ site.data.data.sidebar.tagline }}</h3>
+    </div>
+
+    <div class="contact-container">
+        {% if site.data.data.sidebar.email %}
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.data.data.sidebar.email }}">{{ site.data.data.sidebar.email }}</a>
+        </div>
+        {% endif %}
+
+        {% if site.data.data.sidebar.phone %}
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>{{ site.data.data.sidebar.phone }}</span>
+        </div>
+        {% endif %}
+
+        {% if site.data.data.sidebar.linkedin %}
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/{{ site.data.data.sidebar.linkedin }}" target="_blank">{{ site.data.data.sidebar.linkedin }}</a>
+        </div>
+        {% endif %}
+
+        {% if site.data.data.sidebar.github %}
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/{{ site.data.data.sidebar.github }}" target="_blank">{{ site.data.data.sidebar.github }}</a>
+        </div>
+        {% endif %}
+
+        {% if site.data.data.sidebar.website %}
+        <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <a href="https://{{ site.data.data.sidebar.website }}" target="_blank">{{ site.data.data.sidebar.website }}</a>
+        </div>
+        {% endif %}
+
+        {% if site.data.data.sidebar.pdf %}
+        <div class="contact-item">
+            <i class="fas fa-file-pdf"></i>
+            <a href="{{ site.data.data.sidebar.pdf | relative_url }}" target="_blank">Download PDF</a>
+        </div>
+        {% endif %}
+    </div>
+
+    {% if site.data.data.sidebar.education %}
+    <div class="sidebar-section">
+        <h2>{{ site.data.data.education.title }}</h2>
+        {% for education in site.data.data.education.info %}
+        <div class="education-item">
+            <h4>{{ education.degree }}</h4>
+            <h5>{{ education.university }}</h5>
+            <div class="time">{{ education.time }}</div>
+            {% if education.details %}
+            <div class="details">{{ education.details }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if site.data.data.sidebar.languages %}
+    <div class="sidebar-section">
+        <h2>{{ site.data.data.sidebar.languages.title }}</h2>
+        {% for language in site.data.data.sidebar.languages.info %}
+        <div class="item">
+            <strong>{{ language.idiom }}</strong>
+            <span class="level">{{ language.level }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if site.data.data.sidebar.interests %}
+    <div class="sidebar-section">
+        <h2>{{ site.data.data.sidebar.interests.title }}</h2>
+        {% for interest in site.data.data.sidebar.interests.info %}
+        <div class="item">{{ interest.item }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
