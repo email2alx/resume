@@ -16,7 +16,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - pdf/
   - vendor/
   - .bundle/
   - node_modules/
