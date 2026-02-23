@@ -18,6 +18,12 @@ exclude:
   - Gemfile.lock
   - README.md
   - pdf/
+  - vendor/
+  - .bundle/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
 
 # Sass
 sass:
