@@ -56,15 +56,11 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Software Engineer with 10+ years of experience in both backend and frontend
-      technologies. Developed highly scalable quality backend applications using
-      NodeJS, GoLang and frontend applications using ReactJS.
+      Software Engineer with 10+ years of experience in both backend and frontend technologies. Developed highly scalable quality backend applications using NodeJS, GoLang and frontend applications using ReactJS.
 
-      Major responsibilities include Requirement analysis, Effort estimation,
-      Application Development, Unit testing, Team management and Architecture Design.
+      Major responsibilities include Requirement analysis, Effort estimation, Application Development, Unit testing, Team management and Architecture Design.
 
-      Currently working at Delivery Hero SE in Berlin, Germany, focusing on building
-      and maintaining scalable distributed systems.
+      Currently working at Delivery Hero SE in Berlin, Germany, focusing on building and maintaining scalable distributed systems.
 
 education:
     title: Education
@@ -83,8 +79,9 @@ experiences:
         time: August 2022 - Present
         company: Delivery Hero SE, Berlin, Germany
         details: |
-          Working on building and maintaining scalable distributed systems for
-          a leading global food delivery platform.
+          Working on building and maintaining scalable distributed systems for a leading global food delivery platform.
+            - Contributing to Authentication & Authorization services using Golang
+            - Built a markdown based documentation system which automates doc generation for developers
             - Developing backend services using NodeJS and GoLang
             - Working with cloud technologies (AWS, Kubernetes)
             - Contributing to microservices architecture
